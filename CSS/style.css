@@ -14,6 +14,9 @@
     margin: 0;
     padding: 0;
 }
+img {
+    max-width: 100%;
+}
 
 html, body {
     height: 100%;
@@ -82,6 +85,22 @@ header nav a {
         background-color: #222;
     }
 
+figure {
+    display:flex;
+    flex: 1;
+}
+figure figcaption {
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+figcaption h3 {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
 main {
     display: flex;
     flex: 1;
@@ -127,6 +146,17 @@ PARENT ELEMENT HEADER TO SO THEY WOULD MATCH */
     }
     footer p {
         margin: 4px 2px;
+    }
+}
+@media (min-width: 200px) {
+    figure {
+        padding: 0;
+    }
+    figcaption {
+        font-size: 2.5rem;
+    }
+    figcaption p {
+        font-size: 2rem;
     }
 }
 @media (min-width: 1350px) {
